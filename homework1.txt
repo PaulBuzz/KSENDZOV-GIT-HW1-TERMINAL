@@ -1,0 +1,83 @@
+1) Посмотреть, где я
+Command: pwd
+Result: /Users/macintosh/Desktop/CODING/KSENDZOV/Homework
+2) Создать папку
+Command: mkdir folder_1
+3) Зайти в папку
+Command: cd folder_1
+4) Создать 3 папки
+Command: mkdir -p newfold_1 / newfold_2 / newfold_3
+5) Зайти в любоую папку
+Command: cd newfold_1
+6) Создать 5 файлов (3 txt, 2 json)
+Command: touch file0.txt file1.txt file2.txt test0.json test1.json
+7) Создать 3 папки
+Command: mkdir -p anotherfold_1, anotherfold_2, anotherfold_3
+8) Вывести список содержимого папки
+Command: ls -la
+Result: total 0
+drwxr-xr-x@ 13 macintosh  staff  416 Nov 30 18:00 .
+drwxr-xr-x@  4 macintosh  staff  128 Nov 30 18:00 ..
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_1
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_2
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_3
+-rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file0.txt
+-rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file1.txt
+-rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file2.txt
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_1
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_2
+drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_3
+-rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 test0.json
+-rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 test1.json
+9) + Открыть любой txt файл
+Command: vim file0.txt
+10) + написать туда что-нибудь, любой текст.
+Command: I
+Hello World
+I'm learning QA by Vadim Ksendzov
+This is third line
+This is fourth line
+This is SPARTA! and a fifth line, too
+This is the last, sixth line, btw
+11) + сохранить и выйти.
+Command: ESC -> : -> wq (write/quit)
+12) Выйти из папки на уровень выше
+Command: cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку
+Command: 
+mv folder_1/file0.txt folder_1/file1.txt folder_1/newfold_1
+// нам нужно прописывать folder_1 всегда, поскольку мы сейчас не находимся в ней, шаг 12 вывел нас в папку Homework
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку
+Command: cp folder_1/test0.json folder_1/test1.json folder_1/newfold_2
+15) Найти файл по имени
+Command: find folder_1 -name “file0.txt”
+Result: folder_1/newfold_1/file0.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+Command: tail -f folder_1/newfold_1/file0.txt
+Result: Hello World
+I'm learning QA by Vadim Ksendzov
+This is third line
+This is fourth line
+This is SPARTA! and a fifth line, too
+This is the last, sixth line, btw
+^ + C to quit viewing
+17) вывести несколько первых строк из текстового файла
+Command: head -3 folder_1/newfold_1/file0.txt
+Result: Result: Hello World
+I'm learning QA by Vadim Ksendzov
+This is third line
+18) вывести несколько последних строк из текстового файла
+Command: tail -3 folder_1/newfold_1/file0.txt
+Result: This is fourth line
+This is SPARTA! and a fifth line, too
+This is the last, sixth line, btw
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает
+// для этого создадим файл loremipsum.txt, куда вставим всеми известный длинный текст на латыни
+Command: cd folder_1
+touch loremipsum.txt
+less loremipsum.txt
+q to quit, w-z to navigate
+20) вывести дату и время
+Command: date +%c // выдает в текущем формате, есть еще множество других функций и возможностей
+Result: Tue Nov 30 19:15:51 2021
+=========
