@@ -1,36 +1,33 @@
 1) Посмотреть, где я
 Command: pwd
-Result: /Users/macintosh/Desktop/CODING/KSENDZOV/Homework
+Result: /Users/macintosh/Desktop/CODING/KSENDZ/HW1
 2) Создать папку
-Command: mkdir folder_1
+Command: mkdir fold_0
 3) Зайти в папку
-Command: cd folder_1
+Command: cd fold_0
 4) Создать 3 папки
-Command: mkdir -p newfold_1 / newfold_2 / newfold_3
+Command: mkdir -p afold_1 / afold_2 / afold_3
 5) Зайти в любоую папку
-Command: cd newfold_1
+Command: cd afold_0
 6) Создать 5 файлов (3 txt, 2 json)
-Command: touch file0.txt file1.txt file2.txt test0.json test1.json
+Command: touch f0.txt f1.txt f2.txt t0.json t1.json
 7) Создать 3 папки
-Command: mkdir -p anotherfold_1, anotherfold_2, anotherfold_3
+Command: mkdir -p bfold_1, bfold_2, bfold_3
 8) Вывести список содержимого папки
 Command: ls -la
-Result: total 0
-drwxr-xr-x@ 13 macintosh  staff  416 Nov 30 18:00 .
-drwxr-xr-x@  4 macintosh  staff  128 Nov 30 18:00 ..
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_1
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_2
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 18:02 anotherfold_3
--rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file0.txt
--rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file1.txt
--rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 file2.txt
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_1
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_2
-drwxr-xr-x@  2 macintosh  staff   64 Nov 30 14:15 newfold_3
--rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 test0.json
--rw-r--r--   1 macintosh  staff    0 Nov 30 18:00 test1.json
+total 0
+drwxr-xr-x@ 10 macintosh  staff  320 Dec  1 17:27 .
+drwxr-xr-x@  5 macintosh  staff  160 Dec  1 17:26 ..
+drwxr-xr-x@  2 macintosh  staff   64 Dec  1 17:27 bfold_0
+drwxr-xr-x@  2 macintosh  staff   64 Dec  1 17:27 bfold_1
+drwxr-xr-x@  2 macintosh  staff   64 Dec  1 17:27 bfold_2
+-rw-r--r--   1 macintosh  staff    0 Dec  1 17:26 f0.txt
+-rw-r--r--   1 macintosh  staff    0 Dec  1 17:26 f1.txt
+-rw-r--r--   1 macintosh  staff    0 Dec  1 17:26 f2.txt
+-rw-r--r--   1 macintosh  staff    0 Dec  1 17:26 t0.json
+-rw-r--r--   1 macintosh  staff    0 Dec  1 17:26 t1.json
 9) + Открыть любой txt файл
-Command: vim file0.txt
+Command: vim f0.txt
 10) + написать туда что-нибудь, любой текст.
 Command: I
 Hello World
@@ -45,15 +42,15 @@ Command: ESC -> : -> wq (write/quit)
 Command: cd ..
 13) переместить любые 2 файла, которые вы создали, в любую другую папку
 Command: 
-mv folder_1/file0.txt folder_1/file1.txt folder_1/newfold_1
-// нам нужно прописывать folder_1 всегда, поскольку мы сейчас не находимся в ней, шаг 12 вывел нас в папку Homework
+mv afold_0/f0.txt afold_0/f1.txt afold_0/bfold_0
+// нам нужно прописывать afold_0 всегда, поскольку мы сейчас не находимся в ней, шаг 12 вывел нас в папку fold_0
 14) скопировать любые 2 файла, которые вы создали, в любую другую папку
-Command: cp folder_1/test0.json folder_1/test1.json folder_1/newfold_2
+Command: cp afold_0/t0.json afold_0/t1.json afold_0/bfold_1
 15) Найти файл по имени
-Command: find folder_1 -name “file0.txt”
-Result: folder_1/newfold_1/file0.txt
+Command: find find afold_0 -name "f2.txt"
+Result: afold_0/f2.txt
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
-Command: tail -f folder_1/newfold_1/file0.txt
+Command: tail -f afold_0/bfold_0/f0.txt
 Result: Hello World
 I'm learning QA by Vadim Ksendzov
 This is third line
@@ -62,18 +59,18 @@ This is SPARTA! and a fifth line, too
 This is the last, sixth line, btw
 ^ + C to quit viewing
 17) вывести несколько первых строк из текстового файла
-Command: head -3 folder_1/newfold_1/file0.txt
+Command: head -3 afold_0/bfold_0/f0.txt
 Result: Result: Hello World
 I'm learning QA by Vadim Ksendzov
 This is third line
 18) вывести несколько последних строк из текстового файла
-Command: tail -3 folder_1/newfold_1/file0.txt
+Command: tail -3 afold_0/bfold_0/f0.txt
 Result: This is fourth line
 This is SPARTA! and a fifth line, too
 This is the last, sixth line, btw
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает
 // для этого создадим файл loremipsum.txt, куда вставим всеми известный длинный текст на латыни
-Command: cd folder_1
+Command: cd afold_0
 touch loremipsum.txt
 less loremipsum.txt
 q to quit, w-z to navigate
