@@ -3,3 +3,5 @@
 <age>29</age>
 <city>Odessa</city>
 <wife>Alina</wife>
+<salary>6000</salary>
+
