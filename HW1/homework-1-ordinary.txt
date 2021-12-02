@@ -6,7 +6,7 @@ Command: mkdir fold_0
 3) Зайти в папку
 Command: cd fold_0
 4) Создать 3 папки
-Command: mkdir -p afold_1 / afold_2 / afold_3
+Command: mkdir -p afold_0 / afold_1 / afold_2
 5) Зайти в любоую папку
 Command: cd afold_0
 6) Создать 5 файлов (3 txt, 2 json)
