@@ -48,8 +48,9 @@ mv afold_0/f0.txt afold_0/f1.txt afold_0/bfold_0
 14) скопировать любые 2 файла, которые вы создали, в любую другую папку
 Command: cp afold_0/t0.json afold_0/t1.json afold_0/bfold_1
 15) Найти файл по имени
-Command: find find afold_0 -name "f2.txt"
-Result: afold_0/f2.txt
+Command: find /Users/macintosh/Desktop -name f0.txt
+Result: /Users/macintosh/Desktop/CODING/KSENDZ/SCRPT/f_0/fn_0/f0.txt
+/Users/macintosh/Desktop/CODING/KSENDZ/HW1/fold_0/afold_0/bfold_0/f0.txt
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
 Command: tail -f afold_0/bfold_0/f0.txt
 Result: Hello World
