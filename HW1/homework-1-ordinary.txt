@@ -1,3 +1,5 @@
+ЗАДАНИЕ 1 - ОБЫЧНАЯ СЛОЖНОСТЬ.
+==============================
 1) Посмотреть, где я
 Command: pwd
 Result: /Users/macintosh/Desktop/CODING/KSENDZ/HW1
@@ -77,4 +79,11 @@ q to quit, w-z to navigate
 20) вывести дату и время
 Command: date +%c // выдает в текущем формате, есть еще множество других функций и возможностей
 Result: Tue Nov 30 19:15:51 2021
-=========
+==============================
+ЗАДАНИЕ 2 - ПОВЫШЕННАЯ СЛОЖНОСТЬ
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+Command: curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+Result: {"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},
+"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+==============================
