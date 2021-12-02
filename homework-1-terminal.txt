@@ -52,7 +52,7 @@ Command: find /Users/macintosh/Desktop -name f0.txt
 Result: /Users/macintosh/Desktop/CODING/KSENDZ/SCRPT/f_0/fn_0/f0.txt
 /Users/macintosh/Desktop/CODING/KSENDZ/HW1/fold_0/afold_0/bfold_0/f0.txt
 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
-Command: tail -f afold_0/bfold_0/f0.txt
+Command: tail -F afold_0/bfold_0/f0.txt
 Result: Hello World
 I'm learning QA by Vadim Ksendzov
 This is third line
