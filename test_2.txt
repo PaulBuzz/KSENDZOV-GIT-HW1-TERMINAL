@@ -4,3 +4,4 @@
 <city>Odessa</city>
 <wife>Alina</wife>
 <salary>6000</salary>
+<pets>None</pets>
