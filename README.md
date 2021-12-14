@@ -1,2 +1,2 @@
 # KsendzovQACourse
-Homeworks from the course
+Homework #1 @ Ksendzov's Course
