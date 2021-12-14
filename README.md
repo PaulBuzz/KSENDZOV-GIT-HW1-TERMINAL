@@ -1,2 +1,2 @@
 # KsendzovQACourse
-Homework #1 @ Ksendzov's Course
+Git Homework #1 @ Ksendzov's Course
