@@ -1,5 +1,5 @@
 # TERMINAL
-**TERMINAL Rep for HW1 @ Ksendzov's Course
+**TERMINAL Rep for HW1 @ Ksendzov's Course**
 
 1. Посмотреть, где я.
 ```
